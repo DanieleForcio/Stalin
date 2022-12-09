@@ -253,3 +253,37 @@ header .section:last-child{
         max-width: 200px;
     }
 }
+/*END HEADER*/
+
+/*MAIN-TITLE*/
+.main-title{
+    margin-top: 6px;
+    padding: 310px;
+    background-color: rgba(169, 168, 168, 0.581);
+    background-image: url(../Images/article-stalin.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow:inset -1px -11px 5px 3px rgb(0 0 0 / 47%);
+}
+.main-title h1{
+    text-align: center  ;
+    text-shadow: 2px 2px red; 
+}
+/*END MAIN-TITLE*/
+
+/* VIDEOSPEACH */
+.videoSpeach{
+    padding: 100px 0px;
+    box-shadow:inset 0px 12px 3px 0px rgb(0 0 0 / 47%);
+    text-align: center;
+    text-shadow: 2px 2px red; 
+}
+
+.videoSpeach iframe{
+    margin-top: 110px;
+    width: 1000px;
+    height: 500px;
+    box-shadow:6px 11px 8px 0px rgb(0 0 0 / 47%);
+}
+/*END VIDEOSPEACH*/

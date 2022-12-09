@@ -1,0 +1,24 @@
+.summary{
+        
+    background-color:white;
+    margin: 100px  150px;
+    flex: 1;
+    display: flex;
+    align-items:center;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+.summary-section{
+    padding: 20px;
+}
+.summary-section h1{
+    color: yellow;
+    text-shadow: 2px 2px black; 
+    padding: 20px;
+}
+
+.summary-section img{
+    box-shadow:6px 11px 8px 0px rgb(0 0 0 / 47%);
+}
