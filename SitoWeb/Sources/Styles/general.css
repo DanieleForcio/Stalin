@@ -267,6 +267,11 @@ header .section:last-child{
     background-size: cover;
     box-shadow:inset -1px -11px 5px 3px rgb(0 0 0 / 47%);
 }
+
+.changed{
+    background-image: url(../Images/GiubbaStalin2.jpg);
+}
+
 .main-title h1{
     color: rgb(255, 255, 2);
     text-align: center  ;
@@ -351,4 +356,123 @@ footer a:visited{
 }
 footer a:hover{
     color: rgb(255, 123, 0);
+}
+
+.slideshow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    top: 80px;
+
+    background-attachment: fixed;
+
+    z-index: 0;
+}
+
+.slideshow img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    width: 80%;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+
+    margin: 25px 5px;
+
+
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+
+
+    height: 280px;
+
+    max-height: 320px;
+}
+
+.banner .image{
+    width: 35%;
+    height: 100%;
+
+}
+
+.banner .image img{
+    height: 100%;
+    width: 100%;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+    box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.banner .contents{
+    padding: 15px 17px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 60%;
+}
+
+.banner .contents .titles{
+    padding: 15px 10px;
+    margin-bottom: 25px;
+
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.banner .contents .descriptions{
+
+    padding: 15px 10px;
+    margin-bottom: 25px;
+
+    font-size: var(--font-limit-size);
+}
+
+.banner .contents .links{
+    padding: 15px 10px;
+
+    margin-top: 25px;
+    
+    width: 100%;
+
+    
+    text-align: right;
+}
+
+.banner .contents .links .see-more{
+
+    background-color: transparent;
+    border: none;
+
+    font-weight: bold;
+    font-size: var(--font-limit-size);
+
+    cursor: pointer;
+
+    transition: color 0.3s;
+}
+
+.banner .contents .links .see-more:hover{
+    color: red;
 }
