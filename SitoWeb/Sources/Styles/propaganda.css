@@ -1,0 +1,54 @@
+.side:first-child{
+    margin: 100px 300px;
+    padding: 100px 200px;
+    padding-bottom: 250px;
+    background-image: url(../Images/GiubbaCappelloStalin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:-3px 4px 3px 6px rgb(0 0 0 / 40%);
+    border-radius: 8px;
+    border: 1px solid rgba(0 0 0 / 40%);
+}
+.side:first-child .side-section{
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    border: solid black;
+    border-radius: 8px;
+    box-shadow:4px 2px 2px 0px rgb(0 0 0 / 40%);
+    width:  600px;
+    margin-left: 350px;
+    text-align: justify;
+}
+.side:last-child{
+    border-collapse: collapse;
+    margin: 200px 300px;
+    padding: 100px 0px;
+    padding-bottom: 150px;
+    background-image: url(../Images/GiubbaCappelloStalin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:-3px 4px 3px 6px rgb(0 0 0 / 40%);
+    border-radius: 8px;
+    border: 1px solid rgba(0 0 0 / 40%);
+}
+.side:last-child .side-section{
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    margin-top: 400px;
+    margin-bottom: 10px;
+    border: solid black;
+    border-radius: 8px;
+    box-shadow:4px 2px 2px 0px rgb(0 0 0 / 40%);
+    width:  600px;
+    margin-left: -200px;
+    text-align: justify;
+    border-collapse: collapse;
+}
+
+.father-side {
+    margin: 15px;
+}

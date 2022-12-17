@@ -257,6 +257,7 @@ header .section:last-child{
 
 /*MAIN-TITLE*/
 .main-title{
+    
     margin-top: 6px;
     padding: 310px;
     background-color: rgba(169, 168, 168, 0.581);
@@ -267,6 +268,7 @@ header .section:last-child{
     box-shadow:inset -1px -11px 5px 3px rgb(0 0 0 / 47%);
 }
 .main-title h1{
+    color: rgb(255, 255, 2);
     text-align: center  ;
     text-shadow: 2px 2px red; 
 }
@@ -287,3 +289,66 @@ header .section:last-child{
     box-shadow:6px 11px 8px 0px rgb(0 0 0 / 47%);
 }
 /*END VIDEOSPEACH*/
+
+.noImmagination{
+    color: white;
+    margin: 100px  150px;
+    padding: 200px;
+    flex: 1;
+    display: flex;
+    align-items:center;
+    height: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(28deg, rgba(0,0,0,.8), rgba(0,0,0, 0.6) ), url(../Images/StalinFocusedOnMoney.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow:inset 0px 0px 7px 20px rgb(0 0 0 / 47%);
+}
+.noImmagination-section:first-child{
+    padding-bottom: 100px;
+    text-shadow: 2px 2px red;
+}
+.noImmagination-section{
+    padding: 20px;
+}
+
+footer{
+    border-radius: 5px;
+    text-align: justify;
+    margin: 100px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 47%);;
+    background-color: rgb(175, 10, 10);
+    padding: 50px 100px;
+    display: flex;
+}
+
+footer h2{
+    color: white;
+}
+footer ul{
+    margin-left: -70px;
+    margin-top: 20px;
+    padding: 30px;
+    list-style-type: none;
+}
+
+footer li{
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-right: 150px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:link{
+    color: grey
+}
+footer a:visited{
+    color: rgb(255, 0, 0);
+}
+footer a:hover{
+    color: rgb(255, 123, 0);
+}

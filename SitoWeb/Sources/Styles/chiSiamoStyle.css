@@ -1,0 +1,88 @@
+.person{
+    margin: 10px 30px;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    top: 20px;
+
+    object-position: top;
+    object-fit:cover;
+    border: 5px solid red;
+    border-radius: 100%;
+
+    box-shadow: 1px 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+.group{
+    margin-top: 150px;
+    margin-bottom: -150px;
+}
+.honor{
+    max-width: 100px;
+    
+    height: 200px;
+    position: relative;
+    top: -70px;
+    margin-right: 280px;
+    border-collapse: collapse;
+}
+.group-description{
+    text-align: center;
+    display: flex;
+}
+.group-description h4{
+    width: 175px;
+    padding: 0 100px;
+    text-shadow: 1px 1px red;
+}
+
+.contacts{
+    padding: 100px;
+    box-shadow: inset 0px 0px 6px 6px rgba(0, 0, 0, 47%);
+    background-color: red;
+    margin-top: 300px;
+    border-collapse: collapse;
+}
+.contacts ul{
+    padding-top: 50px;
+    object-position: center;
+    list-style-type: none;
+}
+.contacts li{
+    margin: 5px;
+    
+    text-shadow: 1px 1px black;
+    text-align: center;
+
+    padding: 15px;
+}
+.contacts p{
+    box-shadow: 1px 0 5px 4px rgba(0, 0, 0, 0.4);
+    margin-top: -10px;
+    padding: 10px;
+    margin-left: 340px;
+    text-align: center;
+    border-radius: 15px;
+    width: 600px;
+    background-color: rgba(255, 255, 255);
+}
+.contacts h3{
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+.contacts h1{
+    text-shadow: 1px 1px black;
+}
+.contacts a{
+    text-decoration: none;
+}
+.contacts a:link{
+    color: grey
+}
+.contacts a:visited{
+    color: rgb(150, 0, 0);
+}
+.contacts a:hover{
+    color: rgb(255, 123, 0);
+}
