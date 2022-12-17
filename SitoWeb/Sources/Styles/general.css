@@ -1,0 +1,478 @@
+:root{
+
+    --primary-color: rgb(204, 9, 9);
+    --secondary-color: grey;
+
+    --complementary-primary-color: rgba(126, 126, 13, 0.8);
+    --complementary-primary-color-hover: rgba(160, 160, 17, 0.8);
+
+    --shadow-primary: rgb(175, 10, 10);
+    --shadow-secondary: rgb(95, 95, 9);
+
+    --font-limit-size: 18px;
+    --title-limit-size: 32px;
+
+    --font-primary-color: black;
+    --font-secondary-color: white;
+
+    --default-font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: var(--default-font-family);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+
+    color: var(--font-primary-color);
+
+    background-color: var(--primary-color);
+
+    box-shadow: 0px 5px 3px 2px var(--shadow-primary);
+
+    font-size: var(--font-limit-size);
+}
+
+.flex{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.or{
+    flex-direction: row;
+}
+
+.ver{
+    flex-direction: column;
+}
+
+.primary{
+    font-size: var(--title-limit-size);
+}
+
+.section{
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+
+    margin-right: 10px;
+    min-width: 600px;
+}
+
+header .section:first-child{
+    justify-content: flex-start;
+    margin-left: 15px;
+
+    max-width: 150px;
+    min-width: 120px;
+}
+
+header .section:nth-child(2){
+    max-width: 400px;
+    min-width: 200px;
+}
+
+
+header .section:last-child{
+    justify-content: flex-end;
+    margin: 0px;
+    margin-right: 5px;
+    max-width: 400px;
+    min-width: 150px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-collapse: collapse;
+    padding: 5px 10px;
+
+    width: 100%;
+
+    box-shadow: inset -2px -1px 4px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(60, 60, 60, 0.2);
+
+    border-radius: 15px;
+}
+
+.search-bar .search-icon{
+    max-width: 30px;
+    max-height: 30px;
+
+    padding-right: 7px;
+
+    cursor: pointer;
+
+    position: relative; 
+}
+
+.search-bar div{
+    position: relative;
+}
+
+.search-bar div .tooltip{
+    position: absolute;
+
+    top: 50px;
+    left: -18px;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+    padding: 8px 10px;
+
+    border-radius: 10px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+.search-bar div:hover .tooltip{
+    position: absolute;
+
+    top: 50px;
+    left: -18px;
+    color: black;
+    background-color: white;
+
+    padding: 8px 10px;
+
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.search-bar .search-input{
+    border: none;
+    border-left: 1px solid rgba(150, 150, 150, 0.2);
+
+    padding: 10px 7px;
+    padding-right: 0px;
+
+    background-color: var(--primary-color);
+
+    font-size: var(--font-limit-size);
+
+    flex: 1;
+
+    outline: none;
+
+    width: 100%;
+}
+
+.search-bar .search-input::placeholder{
+    color: black;
+    transition: color 1.2s;
+}
+
+.search-bar .search-input:hover::placeholder{
+    color: black;
+}
+
+.search-bar .search-input:focus::placeholder{
+    color: black;
+}
+
+@media screen and (max-width: 1600px) {
+    :root{
+        --font-limit-size: 16px;
+        --title-limit-size: 26px;
+    }
+
+    header .section:nth-child(2){
+        max-width: 200px;
+        min-width: 150px;
+    }
+
+    header .section{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    :root{
+        --font-limit-size: 14px;
+    }
+
+    header .section:nth-child(2){
+        display: none;
+    }
+
+    header .section:first-child{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    header .section{
+        justify-content: center;
+        min-width: 200px;
+    }
+
+    header .section:nth-child(2){
+        display: flex;
+
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    header .section:first-child{
+        display: none;
+    }
+
+    header .section:nth-child(2){
+        display: flex;
+
+        padding-left: 15px;
+
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 535px){
+    header .section:last-child{
+        display: none;
+    }
+
+    header .section{
+        justify-content: right;
+    }
+
+    header .section:nth-child(2){
+        max-width: 200px;
+    }
+}
+/*END HEADER*/
+
+/*MAIN-TITLE*/
+.main-title{
+    
+    margin-top: 6px;
+    padding: 310px;
+    background-color: rgba(169, 168, 168, 0.581);
+    background-image: url(../Images/article-stalin.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow:inset -1px -11px 5px 3px rgb(0 0 0 / 47%);
+}
+
+.changed{
+    background-image: url(../Images/GiubbaStalin2.jpg);
+}
+
+.main-title h1{
+    color: rgb(255, 255, 2);
+    text-align: center  ;
+    text-shadow: 2px 2px red; 
+}
+/*END MAIN-TITLE*/
+
+/* VIDEOSPEACH */
+.videoSpeach{
+    padding: 100px 0px;
+    box-shadow:inset 0px 12px 3px 0px rgb(0 0 0 / 47%);
+    text-align: center;
+    text-shadow: 2px 2px red; 
+}
+
+.videoSpeach iframe{
+    margin-top: 110px;
+    width: 1000px;
+    height: 500px;
+    box-shadow:6px 11px 8px 0px rgb(0 0 0 / 47%);
+}
+/*END VIDEOSPEACH*/
+
+.noImmagination{
+    color: white;
+    margin: 100px  150px;
+    padding: 200px;
+    flex: 1;
+    display: flex;
+    align-items:center;
+    height: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(28deg, rgba(0,0,0,.8), rgba(0,0,0, 0.6) ), url(../Images/StalinFocusedOnMoney.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow:inset 0px 0px 7px 20px rgb(0 0 0 / 47%);
+}
+.noImmagination-section:first-child{
+    padding-bottom: 100px;
+    text-shadow: 2px 2px red;
+}
+.noImmagination-section{
+    padding: 20px;
+}
+
+footer{
+    border-radius: 5px;
+    text-align: justify;
+    margin: 100px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 47%);;
+    background-color: rgb(175, 10, 10);
+    padding: 50px 100px;
+    display: flex;
+}
+
+footer h2{
+    color: white;
+}
+footer ul{
+    margin-left: -70px;
+    margin-top: 20px;
+    padding: 30px;
+    list-style-type: none;
+}
+
+footer li{
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-right: 150px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:link{
+    color: grey
+}
+footer a:visited{
+    color: rgb(255, 0, 0);
+}
+footer a:hover{
+    color: rgb(255, 123, 0);
+}
+
+.slideshow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    top: 80px;
+
+    background-attachment: fixed;
+
+    z-index: 0;
+}
+
+.slideshow img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    width: 80%;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.2);
+
+    margin: 25px 5px;
+
+
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+
+
+    height: 280px;
+
+    max-height: 320px;
+}
+
+.banner .image{
+    width: 35%;
+    height: 100%;
+
+}
+
+.banner .image img{
+    height: 100%;
+    width: 100%;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+    box-shadow: inset 1px 2px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.banner .contents{
+    padding: 15px 17px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 60%;
+}
+
+.banner .contents .titles{
+    padding: 15px 10px;
+    margin-bottom: 25px;
+
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.banner .contents .descriptions{
+
+    padding: 15px 10px;
+    margin-bottom: 25px;
+
+    font-size: var(--font-limit-size);
+}
+
+.banner .contents .links{
+    padding: 15px 10px;
+
+    margin-top: 25px;
+    
+    width: 100%;
+
+    
+    text-align: right;
+}
+
+.banner .contents .links .see-more{
+
+    background-color: transparent;
+    border: none;
+
+    font-weight: bold;
+    font-size: var(--font-limit-size);
+
+    cursor: pointer;
+
+    transition: color 0.3s;
+}
+
+.banner .contents .links .see-more:hover{
+    color: red;
+}
